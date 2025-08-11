@@ -161,7 +161,7 @@ a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por 
 <li value="2">yyy</li>
 </ol>
 <ol>
-<li value="3">zzz</li>
+<li value="3">zzz</li> 
 </ol>
 
 	vemos 3 listas ordenadas: 
@@ -178,5 +178,4 @@ a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por 
 	
 	blockquote crea un bloque, el cual se utiliza para citar a otros autores. Dentro de este encontramos un parrafo se muestra en forma de lista gracias a la etiqueta
 	<br/> que hace un salto de linea. Debemos diferenciar este parrafo de las listas anteriores ya que el primero es un unico bloque de texto, en cambio, en las listas,
-	cada li tiene su propio bloque.
-	
+	cada li tiene su propio bloque. sda
