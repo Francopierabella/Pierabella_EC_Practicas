@@ -1,0 +1,182 @@
+Ejercicio 1
+
+1. HTML (HyperText Markup Language) es el lenguaje de marcado que se utiliza para estructurar y presentar el contenido de la Web. Algo que resaltar es que no es un lenguaje de programación. Fue creado en 1991, con el objetivo principal de facilitar el intercambio de documentos en la WWW (World Wide Web). HTML tiene varias versiones que han salido a lo largo de los años, las mas importantes fueron: HTML 2.0, con la introducción de los formularios, tablas y listas; HTML 4.01, con la separación de estructura HTML y CSS; HTML5 agregando soporte de audio y video.
+
+2. Los principios básicos que recomienda seguir la W3C son: 
+	- Usar HTML de forma semántica
+	- Separar contenido y presentación
+	- Escribir código valido y bien formado
+	- Incluir metadatos claros
+	- Garantizar accesibilidad
+	- Usar enlaces y rutas correctas
+	- Compatibilidad y degradación elegante
+
+3. Un atributo se considera desaprobado cuando tenemos un elemento que funciona pero no se recomienda usarla porque existe una forma mas accesible de lograr el mismo efecto. Y un atributo obsoleto es un elemento que ya no forma parte de la especificación y no se debe usar.
+
+4. El DTD (Document Type Definition) es un conjunto de reglas que define la estructura y las etiquetas permitidas en el documento. Se contemplan tres especificaciones: Strict, Transitional y Frameset. 
+
+5. Los metadatados son datos que describen el contenido del documento y se colocan en el head. Se especifican en: meta internos, link apuntando a recursos externos y atributo en head.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Ejercicio 2
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML
+se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos
+(nombre y valor), aclarando si es obligatorio.
+
+(2.a)
+<!-- Código controlado el día 12/08/2009 →
+
+RTA: Lo que vemos en esta linea de código es un comentario. Puede ir en cualquier parte del documento HTML. Su función es ayudar al lector del código a tener conocimiento de ciertas cosas que en el código no se ven, asi también poder decir que ocurre en cada parte de nuestro doc. Esta el etiqueta de apertura (<!--), texto  y  etiqueta de cierre (-->).
+(2.b)
+
+<div id="bloque1">Contenido del bloque1</div> 
+
+Rta: vemos un div bien definido con etiqueta de apertura ( <div>) y de cierre ( </div). Crea un bloque en el cual se encuentra el texto " contenido del bloque1".  Dentro de la etiqueta de apertura encontramos un atributo id, el cual sirve para darle un nombre, es decir, un identificador a ese div. No es obligatorio el id, si lo es la apertura de cierre del div.
+
+(2.c)
+
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+Rta: Encontramos una etiqueta img, la cual no tiene nada en el atributo src, lo que implica que no se mostrará ninguna imagen. Luego alt, que le da una descripción a la imagen ( no se muestra en la pagina. Se muestra solo si existe un error y no se carga correctamente la imagen). Id, como mencione anteriormente, es un identificador de la imagen. name no se suele usar en etiquetas img, también le da un " nombre a la img". Width le da el ancho y heigth el alto de la imagen, el numero entre comillas esta expresado en pixeles. longdesc, da una descripción mas detallada de la imagen, apunta a un archivo HTML el cual contiene mas detalles de la imagen.
+
+(2.d)
+
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+Rta: Encontramos una etiqueta meta, que tiene el atributo name, que informa detalles sobre la pagina en los metadatos, estos se especifican en el atributo content, que estos son "casa, compra, venta, alquiler. Luego esta el atributo lang, que determina el idioma de la pagina web. El atributo http-equiv indica cuando el encabezado se quiere simular, y el atributo content es el valor de ese encabezado.
+
+(2.e)
+
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+
+rel="help">Resumen HTML </a>
+
+Rta: Aca tenemos la etiqueta a, que significa anchor, que sirve para enlazar a otra pagina o archivo. Luego dentro tenemos al atributo href que indica a donde tiene que dirigirse. El atributo type indica que a donde se dirige va a ser un HTML o un texto. El atributo hreflang hace referencia al lenguaje de la pagina donde se dirige, en este caso es en español. Charset es un atributo que indica la codificación de caracteres a donde se dirige. Y por ultimo tenemos al atributo rel que indica la relación entre la pagina a la que nos dirigimos y la que estamos actualmente. Luego tenemos el contenido de la etiqueta.
+
+(2.f)
+
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+	<th scope="col">&nbsp;</th>
+	<th scope="col">A</th>
+	<th scope="col">B</th>
+	<th scope="col">C</th>
+</tr>
+<tr>
+	<th scope="row">1º</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<th scope="row">2º</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+
+Rta: Al principio tenemos a la etiqueta table que nos indica que es una tabla de n filas y m columnas. Dentro de la etiqueta nos encontramos con width que modifica la anchura de esta, y summary que proporciona información para que un lector de pantalla pueda saber de que se esta hablando. Luego tenemos a la etiqueta caption, que indica el titulo de la tabla, y su atributo que es aling, que indica la alineación. Luego tenemos la etiqueta tr que indica las filas de las tablas y las th que indican las columnas. Dentro de las th tenemos al atributo scope que indica a quien le corresponde el encabezado de la tabla, en este caso es a toda la fila. Luego tenemos a la etiqueta td que indica el contenido de cada celda, y dentro de esta tenemos &nbsp; que es un espacio en blanco.
+
+------------------------------------------------------------
+
+Ejercicio 3:
+
+(a.)  
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+
+	una etiqueta a (link) que al hacer click sobre ella te lleva a google en la misma pestaña.
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+
+	lo mismo que la anterior, solo que debido al "target="_blank", google se abrira en otra pestaña.
+
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+
+	una etiqueta a (link) con varios atributos: 
+		href: indica la Url al cual apunta el enlace.
+		type: Indica el tipo para la url enlazada. Su funcion unicamente informativa.
+		hreflang: indica el lenguaje humano del recurso al que se enlaza. Tambien unicamente informativo.
+		charset: defini la codificación de caracteres de la URL enlazada.
+		rel: Especifica la relación del objeto de destino con el objeto de enlace.
+	por lo tanto, al diferencia que encuentro es solo informativa, esta linea de codigo es mas informativa que las otras 2. 
+	al no tener el target _blank, se abrirá google en la misma pestaña.
+
+<a href="#">Click aquí para ir a Google</a>
+	
+	En este caso, el link apunta a "#". Cuando ocurre esto, suele apuntarse a un fragmento de codigo html. Pero al no haber nada escrito despues del #,
+	este link no apunta a ninguna direccion. Por lo tanto, al cliquear sobre el no ocurrirá nada.
+
+<a href="#arriba">Click aquí para volver arriba</a>
+
+	A diferencia del anterior, este link apunta a una seccion del codigo html con id "arriba". Por lo tanto, al cliquear sobre el link 
+	nos llevará al fragmento de codigo con id "arriba".
+
+
+<a name="arriba" id="arriba"></a>
+
+	Un link vacio de contenido, solo con identificador y nombre.
+
+
+(b.)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+	vemos una etiqueta p (parrafo) que contiene: una etiqueta img, la cual mostrará la imagen que se encuentre en la direccion "im1.jpg" y de no aparecer por algun error, veremos "imagen1".
+	Al lado de esta img, un link que apunta a google, que dice Click aquí.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+	en este caso, veremos la imagen "im1.jpg", en forma de link, es decir, al cliquearla iremos a google. Esto no afectará visualmente la imagen. Y al lado de esta, el texto "Click aqui" cerrando el parrafo.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+	aqui, la diferencia es que la etiqueta "a" abarca tanto la img como "Click aqui" , por lo tanto al cliquear cualquiera de los 2, iremos a google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+
+	la diferencia es que aqui tenemos 2 links dentro del mismo parrafo, que apuntan ambos a google, pero que se muestran de distinta forma. Uno es la imagen y otro es el texto "Click aqui".
+
+
+(c.)	
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+
+vemos una lista desordernada (ul), es decir, lista de items la cual tiene justamente 3 componentes (li).
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+
+a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por el 1.
+
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li value="3">zzz</li>
+</ol>
+
+	vemos 3 listas ordenadas: 
+		la primera con tiene un unico componente li que dice xxx. Se mostrará -> 1. xxx
+		la segunda tambien tiene un unico componente li, pero este tiene el atributo "value" igualado a 2, esto quiere decir que aunque
+		sea el primer elemento de la lista, no se mostrará 1. yyy, sino 2. yyy
+		y la ter cera es lo mismo que la segunda solo que al tener el value en 3, se mostrará 3. zzz, sin importar que sea el primer elemento de la lista.
+
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+	
+	blockquote crea un bloque, el cual se utiliza para citar a otros autores. Dentro de este encontramos un parrafo se muestra en forma de lista gracias a la etiqueta
+	<br/> que hace un salto de linea. Debemos diferenciar este parrafo de las listas anteriores ya que el primero es un unico bloque de texto, en cambio, en las listas,
+	cada li tiene su propio bloque.
+	
