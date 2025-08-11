@@ -171,9 +171,9 @@ a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por 
 		y la ter cera es lo mismo que la segunda solo que al tener el value en 3, se mostrará 3. zzz, sin importar que sea el primer elemento de la lista.
 
 <blockquote>
-<p>1. xxx<br />
-2. yyy<br />
-3. zzz</p>
+	<p>1. xxx<br />
+	2. yyy<br />
+	3. zzz</p>
 </blockquote>
 	
 	blockquote crea un bloque, el cual se utiliza para citar a otros autores. Dentro de este encontramos un parrafo se muestra en forma de lista gracias a la etiqueta
