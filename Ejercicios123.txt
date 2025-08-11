@@ -168,7 +168,7 @@ a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por 
 		la primera con tiene un unico componente li que dice xxx. Se mostrará -> 1. xxx
 		la segunda tambien tiene un unico componente li, pero este tiene el atributo "value" igualado a 2, esto quiere decir que aunque
 		sea el primer elemento de la lista, no se mostrará 1. yyy, sino 2. yyy
-		y la ter cera es lo mismo que la segunda solo que al tener el value en 3, se mostrará 3. zzz, sin importar que sea el primer elemento de la lista.
+		y la tercera es lo mismo que la segunda solo que al tener el value en 3, se mostrará 3. zzz, sin importar que sea el primer elemento de la lista.
 
 <blockquote>
 	<p>1. xxx<br />
@@ -179,3 +179,124 @@ a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por 
 	blockquote crea un bloque, el cual se utiliza para citar a otros autores. Dentro de este encontramos un parrafo se muestra en forma de lista gracias a la etiqueta
 	<br/> que hace un salto de linea. Debemos diferenciar este parrafo de las listas anteriores ya que el primero es un unico bloque de texto, en cambio, en las listas,
 	cada li tiene su propio bloque.
+
+(d.) 
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Colum
+na1</strong></div></td>
+<td><div align="center"><strong>Columna
+2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+la diferencia entre estas 2 tablas no es visual sino semantica. Ambas muestran la misma tabla. En la primera tenemos th, que
+es la etiqueta semántica para encabezados de tabla. El navegador los pone en negrita y centrados por defecto, y los lectores de pantalla saben que son cabeceras.
+Mientras que en la segunda, tenemos un div el cual contiene un strong con el texto "columna1". Basicamente hace lo mismo que th, pone en negrita con el strong y lo centra con el 
+atributo align="center" del div. Por lo tanto, la diferencia es de simplicidad y semantica. 
+
+(e.)
+
+<table width="200">
+<caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+la diferencia entre ambas tablas esta en el titulo de cada una, ya que en la primera se usa un caption, el cual seria el titulo real de la tabla y esta por fuera debe
+la estructura de datos. En la segunda se simula un titulo de tabla mediante el uso del atributo colspan, pero este esta dentro de la tabla (estructura de datos) .
+
+(f.)
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+la diferencia entre estas tablas esta en que una usa el atributo rowspan y otra el colspan. La primera hace que una columna abarque tantas filas como el numero que 
+le hayamos puesto al atributo rowspan, en este caso 2. Y la segunda, lo opuesto. Hace que una fila abarque tantas columnas como el nuestro que le hayamos puesto 
+al atributo colspan, en este caso 2.
+
+(g.)
