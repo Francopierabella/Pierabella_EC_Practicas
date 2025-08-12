@@ -300,3 +300,141 @@ le hayamos puesto al atributo rowspan, en este caso 2. Y la segunda, lo opuesto.
 al atributo colspan, en este caso 2.
 
 (g.)
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200" border="1" cellpadding="0"
+cellspacing="0">
+<tr>
+<td colspan="2"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+nuevamente, la diferencia no es visual, ambas muestran la misma tabla.
+
+ La de la izquierda tiene 3 columnas en estructura y espaciado por defecto.
+
+La de la derecha tiene 2 columnas en estructura y bordes pegados sin espacio interno.
+
+Visualmente se parecen mucho porque el contenido es vacío (&nbsp;) y las celdas combinadas ocultan la diferencia de columnas.
+
+(h.)
+
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+
+aqui tenemos 3 formularios. El primero y el tercero tienen un bloque dentro gracias a laa etiqueta fieldset
+mientras que el segundo no, el bloque es el formulario en si. 
+En los 3 tenemos dos inputs ( lugar donde el usuario podrá escribir sus datos): uno con "type = "text"" para el nombre de usuario
+y otro con "type = "password"" para la contraseña, que se muestra con puntitos.
+Gracias al atributo "value = "xxx"" en el primer form, en sus inputs, aparece ya escrito xxx en ambos.
+Tambien en este, tenemos mas atributos como "action = "procesar.php", esto indica que al enviar el formulario, se ejecutara el programa "procesar.php."
+method = "post" es el metocdo que usa el navegador para enviar el form. al ser post,  los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidor.
+target = "_blank" carga la respuesta dentro de una nueva ventana sin nombre en un contexto de navegacion en HTML5.
+
+En el segundo, a diferencia del primero, tenemos el atributo action vacio, es decir, al enviarse el form, no se ejecutará ningun programa. 
+en este caso, tenemos method = "get" que los datos del formulario son adjuntados a la URI del atributo action , con un '?' como separador, y la URI resultante es enviada al servidor
+
+Y en el tercero, tenemos un nuevo atributo enctype = text/plain que Cuando el valor del atributo method es post, este atributo es el tipo MIME del contenido que es usado para enviar el formulario al servidor.
+al ser =  text/plain , sera de tipo HTML5. 
+fijemonos que en este, el input de enviar es de tipo reset, es decir, no enviara los datos del form sino que al apretarlo
+reiniciara el formulario con los inputs vacios.
+
+(i.)
+
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+la diferencia entre ambos es que en el primero el boton es una imagen con el texto debajo "Click aqui", ambos dentro del boton.
+y en el segundo no tenemos imagen y el texto "CLICK AQUI" esta dado por el atributo value del button.
+
+(j.)
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+La diferencia entre el codigo J1 y J2 es que el primero en la parte de name utiliza la misma variable "opcion" por lo que cuando eligas X o Y se reemplaza la eleccion,
+en cambio en la pagina con el codigo J2 al tener name distintos podemos elegir las dos opciones (X Y) al mismo tiempo
+
+(k.)
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+ Las diferencia en el código es que en el primero se tiene el atributo múltiple y en el segundo no
+visualmente el primero se muestra como un slide donde se elijen las opciones y se permite elegir mas de una
+y en el segundo código se muestra como una lista plegable donde se selecciona una opción
