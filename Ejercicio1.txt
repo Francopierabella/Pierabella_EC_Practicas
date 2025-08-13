@@ -1,0 +1,46 @@
+EJERCICIO 1
+
+Preguntas:
+1. ¿ Qué es CSS y para qué se usa?
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+6. ¿ Qué es la herencia?
+7. ¿ En qué consiste el proceso denominado cascada?
+
+Respuestas: 
+1. CSS son las siglas de hojas de estilo en cascada. Las hojas de estilo es una tecnología que nos permite controlar
+la apariencia de una página web. CSS describe como los elementos dispuestos en la página son presentados al usuario.
+Con CSS podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el lugar
+donde disponer texto e imágenes en la página.
+
+2. 
+
+3. Podemos asociar las reglas de estilo a las marcas HTML de
+tres maneras:
+❑ directamente a la marca -> seria dentro de la etiqueta, mediante el atributo style
+❑ en el head de la página -> colocando la etiqueta <style> con su etiqueta de cerradura </style. Entre ellas va el codigo CSS
+❑ o agrupar las reglas de estilo en un archivo independiente con extensión *.css -> En el head de la pagina, necesitamos linkear
+nuestro HTML con el css externo mediante mediante la etiqueta link con href hacia el nombre de nuestro archivo .css y rel = StyleSheet.
+
+4. Tipos de selectores mas usados:
+    Selector de elemento: p {...}
+    Selector de clase: .nombreClase {...}
+    Selector de ID: #idElemento {...}
+    Selector descendente: div p {...} (seria todos los p que estan dentro del div)
+    Selector de grupo: h1,h2,h3 {...} ( aplica los estilos a todos esos elementos)
+    Selector Universal: *{...} (aplica los estilos a todos los elementos del HTML)
+    Selector de atributo: input[type = "text"]{...} (aplica a todos los inputs cuyo atributo type sea text)
+
+5.Una pseudo-clase en CSS es una palabra clave que se añade a un selector para definir un estado especial de un elemento,
+ sin necesidad de agregar o quitar clases en el HTML. Las mas utilizadas son a:hover {...} (se dan esos estilos al posicionar
+ el cursor sobre el vinculo) y a:visited{...} (se da ese estilo una vez que el usuario visitó el link).
+
+6. En CSS, la herencia es el mecanismo por el cual ciertos estilos aplicados a un elemento
+ se transmiten automáticamente a sus elementos hijos, sin necesidad de volver a definirlos.
+ Por ejemplo, si tenemos el siguiente codigo HTML: <body> <p> HOLA </p> </body> y luego en 
+ el archivo .css hacemos: body{estilos...} esos estilos se aplicaran a p tambien ya que es "hijo" de body.
+
+7. El proceso cascada siginifica que si primero hacemos: p{color: blue} y luego hacemos p{color: red} el rojo "pisará" al azul,
+en esto se basa el proceso en cascada. Se "pisa" lo anterior y lo que se muestra es lo ultimo.
