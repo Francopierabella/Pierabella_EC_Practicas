@@ -1,0 +1,175 @@
+Parte 1
+    1- A qué nos referimos al hablar de Arquitectura de la Información y cuáles son los ítems principales que constituyen su metodología?  
+    2- Cuál es la ventaja de tener identificados y definidos los objetivos del sitio?
+    3- Qué es la audiencia?  
+    4- Según qué tipos de características se deben analizar las audiencias? 
+    5- Qué son los escenarios de uso? 
+    6- Cuáles deberían ser los contenidos indispensables de un sitio web?  
+    7- Cuáles son los requerimientos funcionales más frecuentes en un sitio web?  
+    8- Al definir la estructura de un sitio, ¿cuáles son los dos aspectos fundamentales que se deben considerar?  
+    9- Cuál es la diferencia entre estructura y diseño de un sitio web?  
+    10- Cuáles son las características que debe tener el sistema de navegación? Explicar c/u.  
+    11- Cuáles son los elementos más importantes de un sistema de navegación?  
+    12- Cuáles son las cuatro etapas sucesivas que se deben realizar para definir el Diseño Visual de un sitio web y en qué consiste cada una?  
+    13- Cuáles son los sistemas que puede utilizar un Sitio Web para recibir feedback o retroalimentación de parte del usuario?  
+    14- En qué consiste la Prueba de verificación de Contenidos? 
+    15- En qué consiste la Prueba de Verificaciones de Interfaces? 
+    16- Cuáles son los chequeos más importantes que se deben realizar respecto de las funcionalidades y aplicaciones que ofrece el sitio?
+
+ Parte 2 
+    1- Qué es una interfaz y cuáles son sus elementos fundamentales?
+    2- Qué es un sistema de navegación y cuáles deben ser sus elementos indispensables?
+    3- Qué es Flash y qué problemas puede acarrear su uso? 
+    4- Qué es AJAX y qué problemas puede acarrear su uso?
+
+Respuestas:
+(1.) Conjunto de métodos y herramientas que permiten organizar los contenidos,
+ para ser encontrados y utilizados por los usuarios, de manera simple y directa. 
+ Sus elementos principales son: 
+    1. Definición de Objetivos del Sitio
+    2.Definición de la Audiencia
+    3. Definición de Contenidos del Sitio 
+    4. Definición de la Estructura del Sitio
+    5. Definición del Diseño Visual 
+(2.) 
+    Permite enfocar el desarrollo en lo que realmente se quiere lograr,
+     evitando información irrelevante, y facilita medir el éxito del 
+     sitio en función de si cumple sus metas.
+(3.)
+    Es el conjunto de públicos o usuarios a los cuales está orientado el sitio web.
+(4.)
+    1. Características demográficas (edad, nivel educativo, ubicación).
+
+    2. Características tecnológicas (nivel de alfabetización digital, dispositivos que usan).
+
+    3. Necesidades de información.
+
+    4. Escenarios de uso (qué esperan encontrar o resolver en el sitio).
+(5.)
+    Son situaciones concretas en las que un usuario interactúa con el sitio para satisfacer una necesidad específica.
+(6.)
+    1. Información institucional (qué es, misión, visión).
+
+    2. Datos de contacto y ubicación.
+
+    3. Preguntas frecuentes.
+
+    4. Noticias o novedades.
+
+    5. Servicios o trámites.
+
+    6. Políticas de privacidad y condiciones de uso.
+(7.)
+    R001: Registrar datos del formulario enviado por el usuario para la creacion de su cuenta
+    R002: Informar al usuario sobre contraseña y/o e-mail inexistente
+    R003: Eliminar cuenta del usuario 
+    R004: Validar par email-contraseña existentes para permitir el ingreso a la pagina
+    R005: Generar reporte sobre actividades realizadas por el usuario.
+
+(8.)
+    Estructura: secciones, funcionalidades y navegación (organización lógica).
+
+    Diseño: representación gráfica y visual (colores, logotipos, tipografía)
+(9.)
+    Estructura: organización interna de contenidos y funcionalidades, sin aspecto gráfico.
+
+    Diseño: parte visual que da identidad y experiencia estética al sitio.  
+(10.)
+Textual: elementos claros como menús, guías o botones fácilmente identificables.
+
+Contextual: forma en que se presenta la información en pantalla, coherente con el diseño,
+     los textos y hasta el dominio (URL).
+(11.)
+    Menú principal.
+
+    Botones o enlaces.
+
+    Mapa del sitio.
+
+    Rutas de navegación (breadcrumbs).
+
+    Buscador interno.
+(12.)
+    1. Diseño de estructuras de páginas: bosquejo lineal de componentes en pantalla.
+
+    2. Bocetos de diseño: dibujos digitales de páginas principales (home, secciones).
+
+    3. Borradores de página: prototipo navegable en HTML para testear.
+
+    4.Maqueta web: sitio final con contenidos e imágenes reales.
+(13.)
+    Formularios de contacto.
+
+    Encuestas o sondeos.
+
+    Foros o comentarios.
+
+    Sistemas de chat o asistencia en línea.
+
+    Integración con redes sociales.
+(14.)
+    Consiste en comprobar que la información publicada sea correcta,
+     completa, actualizada y coherente con los objetivos del sitio.
+(15.)
+    Consiste en evaluar que la interfaz gráfica sea usable, clara, intuitiva y accesible,
+     verificando que el usuario pueda navegar sin problemas.
+(16.)
+    Correcto funcionamiento de formularios.
+
+    Compatibilidad con distintos navegadores y dispositivos.
+
+    Velocidad de carga.
+
+    Seguridad en transacciones y datos.
+
+    Integración con bases de datos o servicios externos.
+
+PARTE 2
+
+(1.)
+La interfaz es el medio de comunicación entre el usuario y el sistema.
+Elementos fundamentales:
+
+    Entrada (formularios, botones, campos de texto).
+
+    Salida (información en pantalla, alertas, mensajes).
+
+    Controles de navegación (menús, enlaces, buscador).
+(2.)
+Es el conjunto de mecanismos que permiten moverse dentro del sitio sin perderse.
+Elementos indispensables:
+
+    Menú principal.
+
+    Submenús o categorías.
+
+    Rutas de navegación.
+
+    Mapa del sitio.
+
+    Buscador.
+(3.)
+Flash fue una tecnología para crear animaciones e interactividad en la web.
+Problemas:
+
+    Incompatibilidad con dispositivos móviles.
+
+    Requiere plugin externo.
+
+    Afecta la accesibilidad.
+
+    Problemas de seguridad.
+
+    Google dejó de indexarlo y ya está obsoleto.
+(4.)
+AJAX (Asynchronous JavaScript and XML) permite actualizar
+ partes de una página sin recargarla completa.
+Problemas:
+
+    Puede dificultar la indexación en buscadores.
+
+    Si se abusa, puede afectar la accesibilidad.
+
+    Puede complicar el historial de navegación (botón “atrás”).
+
+    Requiere buen control de errores en conexiones.

@@ -1,0 +1,113 @@
+EJERCICIO 1
+
+Preguntas:
+1. ¿ Qué es CSS y para qué se usa?
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+6. ¿ Qué es la herencia?
+7. ¿ En qué consiste el proceso denominado cascada?
+
+Respuestas: 
+1. CSS son las siglas de hojas de estilo en cascada. Las hojas de estilo es una tecnología que nos permite controlar
+la apariencia de una página web. CSS describe como los elementos dispuestos en la página son presentados al usuario.
+Con CSS podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el lugar
+donde disponer texto e imágenes en la página.
+
+2. En CSS, las reglas de estilo están compuestas por selectores y declaraciones. 
+Los selectores identifican a qué elementos HTML se aplicarán los estilos,
+ mientras que las declaraciones definen las propiedades de estilo y sus valores. 
+ Las declaraciones siguen un formato de "propiedad: valor;" dentro de un bloque de llaves {} asociado al selector. 
+  Cómo funcionan:
+    El navegador lee el HTML y el CSS.
+    Encuentra el selector y determina qué elementos HTML coinciden.
+    Aplica las propiedades y valores indicados en la declaración a esos elementos.
+    Si hay conflictos (varias reglas para el mismo elemento), se usa la cascada y la especificidad para decidir qué estilo prevalece.
+
+3. Podemos asociar las reglas de estilo a las marcas HTML de
+tres maneras:
+ i. directamente a la marca -> seria dentro de la etiqueta, mediante el atributo style
+ ii. en el head de la página -> colocando la etiqueta <style> con su etiqueta de cerradura </style. Entre ellas va el codigo CSS
+ iii. o agrupar las reglas de estilo en un archivo independiente con extensión *.css -> En el head de la pagina, necesitamos linkear
+nuestro HTML con el css externo mediante mediante la etiqueta link con href hacia el nombre de nuestro archivo .css y rel = StyleSheet.
+
+4. Tipos de selectores mas usados:
+    Selector de elemento: p {...}
+    Selector de clase: .nombreClase {...}
+    Selector de ID: #idElemento {...}
+    Selector descendente: div p {...} (seria todos los p que estan dentro del div)
+    Selector de grupo: h1,h2,h3 {...} ( aplica los estilos a todos esos elementos)
+    Selector Universal: *{...} (aplica los estilos a todos los elementos del HTML)
+    Selector de atributo: input[type = "text"]{...} (aplica a todos los inputs cuyo atributo type sea text)
+
+5.Una pseudo-clase en CSS es una palabra clave que se añade a un selector para definir un estado especial de un elemento,
+ sin necesidad de agregar o quitar clases en el HTML. Las mas utilizadas son a:hover {...} (se dan esos estilos al posicionar
+ el cursor sobre el vinculo) y a:visited{...} (se da ese estilo una vez que el usuario visitó el link).
+
+6. En CSS, la herencia es el mecanismo por el cual ciertos estilos aplicados a un elemento
+ se transmiten automáticamente a sus elementos hijos, sin necesidad de volver a definirlos.
+ Por ejemplo, si tenemos el siguiente codigo HTML: <body> <p> HOLA </p> </body> y luego en 
+ el archivo .css hacemos: body{estilos...} esos estilos se aplicaran a p tambien ya que es "hijo" de body.
+
+7. El proceso cascada siginifica que si primero hacemos: p{color: blue} y luego hacemos p{color: red} el rojo "pisará" al azul,
+en esto se basa el proceso en cascada. Se "pisa" lo anterior y lo que se muestra es lo ultimo.
+
+---------------------------------------------------------------------------------------------------
+Ejercicio 2
+
+Por lo que podemos ver al principio del código es la declaración para todos los párrafos que tengan el id con nombre "normal",
+ se le aplica una fuente arial, o en caso que no tenga esa fuente descargada se aplicara helvética. 
+ Luego se le ajusta el tamaño de las letras en 11 pixeles y el grosor de las letras esta en negrita.
+Luego tenemos la declaración de *#destacado, que significa que a todo elemento que tenga el id="destacado" se le aplicara estas reglas.
+ Dentro tenemos el estilo del borde, que en este caso es solido, luego el color, que es azul, y por ultimo el ancho de este, que son 2 pixeles.
+Por ultimo tenemos a los elementos que tengan el id="distinto", que aplicara a aquellas etiquetas que tengan ese id. 
+Este modificara el color del fondo en ese color en hexadecimal y el color de las letras en rojo.
+
+---------------------------------------------------------------------------------------------------
+
+Ejercicio 3
+
+Acá lo que vemos es que al principio del código se declara que para todas las etiquetas de párrafo que tengan la clase quitar se le modifica el color del texto a rojo. 
+Luego podemos ver que se declara que para todas las etiquetas que tengan la clase desarrollo el tamaño de la fuente es de 8 pixeles.
+Y como ultimo para todas las etiquetas que tengan la clase importante su tamaño de fuente será de 20 pixeles.
+Un detalle que vemos es que podemos aplicar varias clases a una etiqueta, y el orden de precedencia de su diseño en los estilos
+será el que especifica la etiqueta y la clase, p.quitar, y luego la clase para todos, .importante. 
+
+---------------------------------------------------------------------------------------------------
+
+Ejercicio 4
+
+Para el primer código, al primer párrafo se le aplica la class="contenido" y luego el estilo del grosor de la fuente que se establece como normal.
+Por declaración su texto va a ser de color negro y la fuente va a ser arial o helvética, y su tamaño es de 10 pixeles. 
+Luego tenemos una tabla donde en la primera fila y primer columna tenemos un texto que su color es verde, por declaración,
+ y luego tenemos una etiqueta de enlace donde nos redirige a Google. Su color varia dependiendo si ya la visitamos anteriormente
+  o si ponemos el cursor encima de ella, todo esto esta declarado en la hoja de estilo.
+En el segundo código la estructura de etiquetas es igual, pero la gran diferencia es que se le aplica la clase "contenido" a la etiqueta body, 
+cambiando asi el tamaño de las letras y aplicando negrita. 
+
+-------------------------------------------------------------------------------------------------------
+
+
+Ejercicio 5
+En cada caso, declarar una regla CSS que produzca el siguiente efecto:
+1. Los textos enfatizados dentro de cualquier título deben ser rojos.
+    h1 strong { color: red;}
+2. Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a
+su vez esté dentro de un bloque debe ser color negro.
+    div p [href] { color: black;}
+3. El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser
+amarillo pero si es un enlace a otra página debe ser azul.
+    #ultimo ul li {color: yellow;}
+    #ultimo ul li a {color: blue;}
+4. Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si
+están dentro de un título deben ser rojos.
+    div #importante {color: green;}
+    h1 #importante {color: red;}
+5. Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules.
+    h1 [title] {color: blue;}
+6. El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta
+para los ya visitados y, además, no deben aparecer subrayados.
+    ol a{text-decoration: none;}
+    ol a:link{color: blue;}
+    ol a:visited{color: blueviolet;}
