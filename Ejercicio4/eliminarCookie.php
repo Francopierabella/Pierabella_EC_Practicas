@@ -1,6 +1,6 @@
 
 <?php 
-
+// HAGO CAMBIos
 if(isset($_POST['borrar'])){
 
     header("Location: periodico.php");
