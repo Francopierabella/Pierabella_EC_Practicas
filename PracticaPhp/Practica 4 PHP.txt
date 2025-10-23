@@ -9,7 +9,7 @@ Las estructuras de control que vemos son: el condicional if.
 Y la salida por la pantalla es: booleanstringstringinteger1xyzxyz184444
 
 2)
-a. Los códigos son equivalentes.
+(a). Los códigos son equivalentes.
 b. Los códigos son equivalentes.
 c. Los códigos son equivalentes.
 
