@@ -1,0 +1,10 @@
+1) mysql_connect()
+2) Los parametros necesarios son: hostname (donde esta hosteado), username (nombre de usuario), password (contraseña)
+3) mysql_select_db()
+4) Le debemos pasar el resultado de la funcion mysql_connect(), con sus respectivos parametros, y el nombre de la base de datos
+5) se utiliza para obtener el resultado del comando que le pasemos
+6) requiere como parametros (conexcion de la base de datos, el comando que queremos ejecutar)
+7) para detener la ejecucion de la consulta.
+8) ver el error que se ha producido, en caso de que no halla devuelve una cadena vacia.
+
+La porcion de codigo que tenemos ahi es convertir el resultado de la consulta a una variable "fila" y luego mostrarla en una tabla. Por ultimo libera el espacio en memoria y cierra la coneccion con la base de datos.
